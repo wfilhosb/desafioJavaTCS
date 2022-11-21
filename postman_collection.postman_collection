@@ -1,0 +1,514 @@
+{
+	"info": {
+		"_postman_id": "262739df-0a24-48f3-be95-7010222583d9",
+		"name": "DesafioControlePedido",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Frete",
+			"item": [
+				{
+					"name": "Popula_Valores_Frete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"AC\",\r\n        \"valor_frete\":\"62.75\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"AL\",\r\n        \"valor_frete\":\"5.21\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"AM\",\r\n        \"valor_frete\":\"53.74\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"AP\",\r\n        \"valor_frete\":\"44.12\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"BA\",\r\n        \"valor_frete\":\"24.36\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"CE\",\r\n        \"valor_frete\":\"33.52\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"DF\",\r\n        \"valor_frete\":\"19.54\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"ES\",\r\n        \"valor_frete\":\"47.96\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"GO\",\r\n        \"valor_frete\":\"19.89\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"MA\",\r\n        \"valor_frete\":\"16.57\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"MG\",\r\n        \"valor_frete\":\"0.00\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"MS\",\r\n        \"valor_frete\":\"8.95\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"MT\",\r\n        \"valor_frete\":\"14.59\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"PA\",\r\n        \"valor_frete\":\"52.41\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"PB\",\r\n        \"valor_frete\":\"19.84\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"PE\",\r\n        \"valor_frete\":\"42.76\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"PI\",\r\n        \"valor_frete\":\"29.65\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"PR\",\r\n        \"valor_frete\":\"24.24\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"RJ\",\r\n        \"valor_frete\":\"24.65\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"RN\",\r\n        \"valor_frete\":\"56.77\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"RO\",\r\n        \"valor_frete\":\"68.48\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"RR\",\r\n        \"valor_frete\":\"57.58\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"RS\",\r\n        \"valor_frete\":\"22.57\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"SC\",\r\n        \"valor_frete\":\"16.45\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"SE\",\r\n        \"valor_frete\":\"18.98\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"SP\",\r\n        \"valor_frete\":\"2.00\"\r\n    },\r\n    {\r\n        \"codigo\":\"\",\r\n        \"uf\":\"TO\",\r\n        \"valor_frete\":\"8.59\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/frete/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Cliente_Cadastro",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\":\"\",\r\n    \"nome_completo\":\"Endereco automatico\",\r\n    \"cep\":72210202,\r\n    \"telefone\":\"61982011991\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/cliente/"
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente_BuscaPorCódigo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/cliente/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente_BuscaTodos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "codigo",
+								"value": "1",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/cliente/"
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente_Alteração",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\":\"1\",\r\n    \"nome_completo\":\"Washington Siqueira Brandão Filho\",\r\n    \"endereco\":\"QNM 20 Conjunto B Casa 46\",\r\n    \"cep\":72210202,\r\n    \"bairro\":\"Ceilândia Sul\",\r\n    \"cidade\":\"Brasília\",\r\n    \"uf\":\"DF\",\r\n    \"telefone\":\"61982011991\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/cliente/"
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente_Exclusão",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/cliente/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Produto",
+			"item": [
+				{
+					"name": "Produto_Cadastro",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\":\"\",\r\n    \"descricao\":\"fio 3mm cobre\",\r\n    \"categoria\":\"eletricidade\",\r\n    \"valor_unitario\":\"11.79\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/produto/"
+					},
+					"response": []
+				},
+				{
+					"name": "Produto_BuscaPorCódigo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/produto/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Produto_BuscaTodos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "codigo",
+								"value": "1",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/produto/"
+					},
+					"response": []
+				},
+				{
+					"name": "Produto_Alteração",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": 2,\r\n    \"descricao\": \"Pino de 3 pontas 10A\",\r\n    \"categoria\": \"eletricidade\",\r\n    \"valor_unitario\": 5.69\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/produto/"
+					},
+					"response": []
+				},
+				{
+					"name": "Produto_Exclusão",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/produto/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedido",
+			"item": [
+				{
+					"name": "Pedido_Cadastro",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\":\"\",\r\n    \"data_pedido\":\"2022-12-10\",\r\n    \"valor_total_pedido\":10236\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/pedido/codigo_cliente/18"
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido_BuscaPorCódigo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/pedido/6"
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido_BuscaTodos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "codigo",
+								"value": "1",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/pedido/"
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido_Alteração",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": 5,\r\n    \"data_pedido\": \"2022-12-12\",\r\n    \"valor_frete\": 986.0,\r\n    \"valor_total_pedido\": 7350.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/pedido/"
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido_Exclusão",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/pedido/4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ItensDoPedido",
+			"item": [
+				{
+					"name": "ItensDoPedido_Cadastro",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\":\"\",\r\n    \"quantidade\":100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/itensDoPedido/codigo_produto/8/codigo_pedido/5"
+					},
+					"response": []
+				},
+				{
+					"name": "ItensDoPedido_BuscaPorCódigo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/itensDoPedido/10"
+					},
+					"response": []
+				},
+				{
+					"name": "ItensDoPedido_BuscaTodos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/itensDoPedido/"
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido_Exclusão Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/itensDoPedido/10"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NotaFiscal",
+			"item": [
+				{
+					"name": "BuscaNotaFiscalPorCódigoPedido",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/pedido/notafiscal/6"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
